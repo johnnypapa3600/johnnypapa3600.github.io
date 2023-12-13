@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en-GB" data-scrapbook-source="https://peapods.finance/" data-scrapbook-create="20231213151409120"
+  data-scrapbook-title="Peapods Finance">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Peapods Finance</title>
+  <meta name="title" content="Peapods Finance">
+  <meta name="description" content="The first fully decentralized on-chain yield-bearing index funds">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="">
+  <meta property="og:title" content="Peapods Finance">
+  <meta property="og:description" content="The first fully decentralized on-chain yield-bearing index funds">
+  <meta property="og:image" content="/og-image.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://twitter.com/">
+  <meta property="twitter:title" content="Peapods Finance">
+  <meta property="twitter:description" content="The first fully decentralized on-chain yield-bearing index funds">
+  <meta property="twitter:image" content="/og-image.png">
+  <link href="fonts.css" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="57x57" href="https://peapods.finance/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://peapods.finance/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://peapods.finance/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://peapods.finance/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://peapods.finance/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://peapods.finance/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://peapods.finance/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://peapods.finance/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://peapods.finance/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="icon" href="favicon.ico">
+  <link rel="manifest" href="https://peapods.finance/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peapods Finance</title>
+
+  <link rel="stylesheet" href="index.bc808fbb.css">
+  <style>
+    .vue-notification-group {
+      display: block;
+      position: fixed;
+      z-index: 5000
+    }
+
+    .vue-notification-wrapper {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      margin: 0;
+      padding: 0
+    }
+
+    .notification-title {
+      font-weight: 600
+    }
+
+    .vue-notification-template {
+      display: block;
+      box-sizing: border-box;
+      background: white;
+      text-align: left
+    }
+
+    .vue-notification {
+      display: block;
+      box-sizing: border-box;
+      text-align: left;
+      font-size: 12px;
+      padding: 10px;
+      margin: 0 5px 5px;
+      color: #fff;
+      background: #44A4FC;
+      border-left: 5px solid #187FE7
+    }
+
+    .vue-notification.warn {
+      background: #ffb648;
+      border-left-color: #f48a06
+    }
+
+    .vue-notification.error {
+      background: #E54D42;
+      border-left-color: #b82e24
+    }
+
+    .vue-notification.success {
+      background: #68CD86;
+      border-left-color: #42a85f
+    }
+
+    .vn-fade-enter-active,
+    .vn-fade-leave-active,
+    .vn-fade-move {
+      transition: all .5s
+    }
+
+    .vn-fade-enter-from,
+    .vn-fade-leave-to {
+      opacity: 0
+    }
+  </style>
+  <link rel="stylesheet" href="InputIcon.b0ecca7a.css">
+  <style type="text/css">
+    #arrow[data-v-20b7fd4a],
+    #arrow[data-v-20b7fd4a]::before {
+      transition: background 250ms ease-in-out;
+      position: absolute;
+      width: calc(10px - var(--popper-theme-border-width, 0px));
+      height: calc(10px - var(--popper-theme-border-width, 0px));
+      box-sizing: border-box;
+      background: var(--popper-theme-background-color);
+    }
+
+    #arrow[data-v-20b7fd4a] {
+      visibility: hidden;
+    }
+
+    #arrow[data-v-20b7fd4a]::before {
+      visibility: visible;
+      content: "";
+      transform: rotate(45deg);
+    }
+
+    /* Top arrow */
+    .popper[data-popper-placement^="top"]>#arrow[data-v-20b7fd4a] {
+      bottom: -5px;
+    }
+
+    .popper[data-popper-placement^="top"]>#arrow[data-v-20b7fd4a]::before {
+      border-right: var(--popper-theme-border-width) var(--popper-theme-border-style) var(--popper-theme-border-color);
+      border-bottom: var(--popper-theme-border-width) var(--popper-theme-border-style) var(--popper-theme-border-color);
+    }
+
+    /* Bottom arrow */
+    .popper[data-popper-placement^="bottom"]>#arrow[data-v-20b7fd4a] {
+      top: -5px;
+    }
+
+    .popper[data-popper-placement^="bottom"]>#arrow[data-v-20b7fd4a]::before {
+      border-left: var(--popper-theme-border-width) var(--popper-theme-border-style) var(--popper-theme-border-color);
+      border-top: var(--popper-theme-border-width) var(--popper-theme-border-style) var(--popper-theme-border-color);
+    }
+
+    /* Left arrow */
+    .popper[data-popper-placement^="left"]>#arrow[data-v-20b7fd4a] {
+      right: -5px;
+    }
+
+    .popper[data-popper-placement^="left"]>#arrow[data-v-20b7fd4a]::before {
+      border-right: var(--popper-theme-border-width) var(--popper-theme-border-style) var(--popper-theme-border-color);
+      border-top: var(--popper-theme-border-width) var(--popper-theme-border-style) var(--popper-theme-border-color);
+    }
+
+    /* Right arrow */
+    .popper[data-popper-placement^="right"]>#arrow[data-v-20b7fd4a] {
+      left: -5px;
+    }
+  </style>
+  <style type="text/css">
+    .inline-block[data-v-5784ed69] {
+      display: inline-block;
+    }
+
+    .popper[data-v-5784ed69] {
+      transition: background 250ms ease-in-out;
+      background: var(--popper-theme-background-color);
+      padding: var(--popper-theme-padding);
+      color: var(--popper-theme-text-color);
+      border-radius: var(--popper-theme-border-radius);
+      border-width: var(--popper-theme-border-width);
+      border-style: var(--popper-theme-border-style);
+      border-color: var(--popper-theme-border-color);
+      box-shadow: var(--popper-theme-box-shadow);
+      z-index: var(--c81fc0a4);
+    }
+
+    .popper[data-v-5784ed69]:hover,
+    .popper:hover>#arrow[data-v-5784ed69]::before {
+      background: var(--popper-theme-background-color-hover);
+    }
+
+    .inline-block[data-v-5784ed69] {
+      display: inline-block;
+    }
+
+    .fade-enter-active[data-v-5784ed69],
+    .fade-leave-active[data-v-5784ed69] {
+      transition: opacity 0.2s ease;
+    }
+
+    .fade-enter-from[data-v-5784ed69],
+    .fade-leave-to[data-v-5784ed69] {
+      opacity: 0;
+    }
+  </style>
+  <script
+    data-scrapbook-elem="custom-elements-loader">(function (names) { if (!customElements) { return; } for (const name of names) { customElements.define(name, class CustomElement extends HTMLElement { }); } })(["onboard-v2"])</script>
+</head>
+
+<head>
+  <script defer="defer" src="js/vendors.js"></script>
+  <script defer="defer" src="js/contracts.js"></script>
+  <script defer="defer" src="js/main.js"></script>
+
+  <script>
+    window.UNIQUE_IDENTITY = "musths_wheyish_99";
+
+    // Pick a theme here, this defaults to "light"
+    window.modal_theme = "dark"
+
+    // https://docs.walletconnect.com/web3modal/v2/html/wagmi/theming
+    window.modal_variables = {
+      /* Example of what you can do */
+      "--w3m-accent-color": "#53FF53",
+      "--w3m-background-color": "#53FF53",
+      // "--w3m-logo-image-url": "/your-logo.svg",
+    };
+
+    // Notification modals
+    window.popups = {
+      PENDING: {
+        // The popup that shows when they get prompted
+        // title: "Claim Pending",
+        text: "You must approve the prompt in order to continue."
+      },
+      INVALID: {
+        // Shown when they connect on a wallet that is poor.
+        // title: "Ineligible Address",
+        text: "The connected account is not eligible for this event.\nPlease try using a different account.",
+      }
+    }
+
+    // Only touch this if you know what you're doing!
+    window.OVERRIDE_MODE = false;
+  </script>
+</head>
+
+<body>
+  <div id="app" data-v-app="">
+    <div>
+      <div class="h-screen">
+        <nav
+          class="fixed top-0 w-full z-20 bg-transparent border-b border-transparent bg-black/[0.15] border-b border-white/25">
+          <div class="flex items-center justify-between py-5 px-8 w-full"><a aria-current="page" href=""
+              class="router-link-active router-link-exact-active"><img src="logo.png" alt=""
+                style="max-width: 200px;"></a><!---->
+            <div class="lg:flex hidden items-center gap-3">
+              <div class="lg:flex items-center gap-7 hidden border-white/[0.55] px-5 py-2 text-sm">
+                <div><a aria-current="page" href=""
+                    class="router-link-active router-link-exact-active text-base text-lp-green-2">Home</a></div>
+                <div><a aria-current="page" href="#info"
+                    class="router-link-active router-link-exact-active text-base text-secondary-light">Flywheel</a>
+                </div>
+                <div><a aria-current="page" href="#launch-section"
+                    class="router-link-active router-link-exact-active text-base text-secondary-light">Earn Yield</a>
+                </div>
+                <div><a aria-current="page" href="#guide"
+                    class="router-link-active router-link-exact-active text-base text-secondary-light">Platform
+                    Features</a></div>
+              </div>
+              <div class="flex items-center gap-5"><a href="https://t.me/PeapodsFinance" target="_blank"
+                  rel="noopener noreferrer"><svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" class="">
+                    <path id="telegram"
+                      d="M7.05161 10.9901L13.7223 16.0725C14.4836 16.5056 15.0329 16.2813 15.2226 15.3438L17.9379 2.14827C18.2158 0.998899 17.513 0.477413 16.7847 0.818384L0.840369 7.15858C-0.247967 7.6088 -0.241484 8.23498 0.642013 8.51393L4.73369 9.83102L14.2064 3.66807C14.6536 3.3884 15.0641 3.53862 14.7272 3.84702"
+                      fill="white"></path>
+                  </svg></a><a href="" target="_blank" rel="noopener noreferrer"><svg width="18" height="21"
+                    viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+                    <path id="dex" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.69378 1.71957C5.46078 2.33401 4.45202 2.85395 4.45223 2.8751C4.45278 2.92968 7.41147 4.36309 7.51648 4.3596C7.56425 4.35807 7.91079 4.20547 8.28652 4.02053L8.96978 3.68434L9.71599 4.05127L10.4622 4.41827L11.6842 3.89298C13.5255 3.10146 13.7167 3.01473 13.6867 2.98559C13.6469 2.94692 12.9865 2.60751 11.1947 1.7051C10.3287 1.26895 9.48825 0.841317 9.32689 0.754787C9.16556 0.668256 9.01153 0.598647 8.98463 0.599995C8.95772 0.601342 7.92681 1.10516 6.69378 1.71957ZM1.28585 4.39854L0.00231565 5.03277V7.81633C0.00231565 9.3473 0.0191698 10.5999 0.0398435 10.5999C0.0604456 10.5999 0.69195 10.338 1.44315 10.0179L2.80898 9.43598V6.50193L3.47641 6.84978C3.99073 7.1176 4.50535 7.38486 5.02028 7.65158L5.8967 8.10552L6.28668 7.93682C6.53126 7.83085 6.77536 7.72385 7.01895 7.61582C7.20719 7.53196 7.66927 7.33286 8.04576 7.1733C8.42226 7.01367 8.77078 6.85314 8.82019 6.81656C8.88584 6.76796 8.08534 6.34478 5.85938 5.25128C4.18149 4.42701 2.75484 3.75523 2.68904 3.75845C2.62325 3.76167 1.99182 4.04967 1.28585 4.39854ZM13.918 4.57664C13.0439 4.95417 12.328 5.27814 12.3272 5.29662C12.3264 5.31507 12.8029 5.58608 13.3861 5.89877C13.9692 6.21153 14.4463 6.48414 14.4463 6.50467C14.4463 6.52515 13.9303 6.76433 13.2997 7.03627C12.669 7.30815 11.0749 7.99684 9.75715 8.5667L5.3418 10.4759C4.23112 10.9563 3.22997 11.3892 3.11703 11.4381C0.848411 12.4206 0.224857 12.6932 0.139225 12.74C0.0531167 12.7871 0.0336127 13.0608 0.0182865 14.4345L0 16.073L1.1478 16.6324L2.29557 17.1919L3.88714 16.5048C4.76253 16.1269 5.47871 15.7979 5.47871 15.7736C5.47871 15.7495 5.31695 15.6487 5.11933 15.5495C4.92162 15.4503 4.51349 15.2308 4.21229 15.0616C3.91111 14.8924 3.61079 14.7371 3.54486 14.7165C3.47894 14.696 3.42597 14.66 3.42704 14.6366C3.42814 14.6132 4.129 14.2948 4.9844 13.9288C6.64587 13.2182 7.91735 12.6705 10.6471 11.4896C11.8677 10.9617 13.0885 10.434 14.3094 9.90675C15.3824 9.44343 16.63 8.90229 17.0818 8.70425L17.9033 8.34417L17.9215 6.68707L17.9399 5.03003L16.7757 4.45842C16.1354 4.14406 15.5881 3.88762 15.5594 3.88855C15.5308 3.88942 14.7921 4.19903 13.918 4.57664ZM17.5914 10.5548C17.4198 10.635 17.081 10.7851 16.8384 10.8883C16.5958 10.9916 16.1354 11.1903 15.8154 11.33L15.2335 11.5839L15.2202 13.0386C15.2129 13.8388 15.1821 14.4898 15.1518 14.4856C15.0829 14.4758 13.9924 13.9408 12.8961 13.3789C12.1049 12.9733 12.0552 12.9572 11.8693 13.0453C11.7618 13.0962 11.1194 13.3719 10.4417 13.6579C9.76398 13.9439 9.1874 14.1966 9.16028 14.2194C9.13323 14.2423 10.4972 14.9495 12.1914 15.7911L15.2717 17.3213L16.5875 16.6701C17.3111 16.312 17.9265 15.9854 17.9548 15.9443C18.0186 15.8519 18.0131 10.3964 17.9493 10.4038C17.924 10.4067 17.7629 10.4747 17.5914 10.5548ZM10.3048 16.9582C10.0765 17.0521 9.84836 17.1461 9.62024 17.2402C8.93137 17.5253 9.06637 17.5348 8.24682 17.1445C7.70097 16.8846 7.46568 16.8044 7.36355 16.8433C7.28695 16.8725 6.62765 17.1562 5.89834 17.4738C5.16908 17.7914 4.5471 18.0513 4.51616 18.0513C4.21019 18.0513 4.71887 18.342 6.68175 19.2892L8.98374 20.4L9.95231 19.9425C10.485 19.6909 11.5595 19.1871 12.3401 18.823C13.1206 18.4587 13.7496 18.1512 13.7378 18.1396C13.7259 18.1281 13.0719 17.8068 12.2844 17.4257L10.8524 16.7329L10.3048 16.9582Z"
+                      fill="white"></path>
+                  </svg></a><a href="https://x.com/PeapodsFinance" target="_blank" rel="noopener noreferrer"><svg
+                    width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+                    <path id="x"
+                      d="M0.0437997 0.0764771L6.99339 9.36857L0 16.9235H1.57406L7.6969 10.3089L12.6438 16.9235H18L10.6592 7.10883L17.1687 0.0764771H15.5947L9.95603 6.1682L5.4 0.0764771H0.0437997ZM2.35852 1.2358H4.81913L15.685 15.7642H13.2244L2.35852 1.2358Z"
+                      fill="white"></path>
+                  </svg></a></div><a href="https://docs.peapods.finance/" target="_blank"
+                rel="noopener noreferrer"><button type="button"
+                  class="text-center rounded flex items-center justify-center gap-2 font-manrope px-3 py-2 text-xs px-5 py-2.5 text-sm rounded rounded-full bg-lp-green-2 btn-primary text-black-2 rounded-full"><span>Documentation</span><!----></button></a><a
+                href="https://peapods.finance/app" class=""><button type="button"
+                  class="text-center rounded flex items-center justify-center gap-2 font-manrope px-3 py-2 text-xs px-5 py-2.5 text-sm rounded rounded-full bg-lp-green-2 btn-primary text-black-2 rounded-full"><span>Platform</span><svg
+                    width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 text-black-2">
+                    <g id="fluent:arrow-right-20-filled">
+                      <path id="Vector"
+                        d="M11.265 3.20501C11.1196 3.0733 10.9284 3.00381 10.7324 3.01143C10.5363 3.01905 10.3511 3.10317 10.2164 3.24575C10.0816 3.38834 10.0081 3.57804 10.0116 3.77418C10.0151 3.97032 10.0953 4.15729 10.235 4.29501L15.474 9.25001H2.75C2.55109 9.25001 2.36032 9.32902 2.21967 9.46968C2.07902 9.61033 2 9.80109 2 10C2 10.1989 2.07902 10.3897 2.21967 10.5303C2.36032 10.671 2.55109 10.75 2.75 10.75H15.476L10.235 15.707C10.161 15.774 10.1012 15.8551 10.0589 15.9456C10.0167 16.036 9.99295 16.134 9.98907 16.2337C9.9852 16.3335 10.0013 16.433 10.0364 16.5265C10.0714 16.6199 10.1248 16.7054 10.1934 16.778C10.2619 16.8505 10.3443 16.9087 10.4356 16.949C10.5269 16.9893 10.6254 17.011 10.7252 17.0127C10.825 17.0145 10.9242 16.9963 11.0168 16.9593C11.1095 16.9223 11.1939 16.8671 11.265 16.797L17.683 10.727C17.8427 10.5766 17.9481 10.3776 17.983 10.161C18.0066 10.0525 18.0059 9.94018 17.981 9.83201C17.9448 9.6189 17.8402 9.42337 17.683 9.275L11.265 3.20501Z"
+                        fill="currentColor"></path>
+                    </g>
+                  </svg></button></a>
+            </div><button class="flex lg:hidden text-secondary-light"><svg class="h-6 w-6 block"
+                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                </path>
+              </svg></button>
+          </div>
+          <div class="fixed top-0 inset-x-0 transition transform origin-top xl:hidden z-50" style="display: none;">
+            <div class="rounded-lg shadow-md bg-gradient-9 ring-1 ring-black ring-opacity-5 overflow-hidden pb-5">
+              <div class="py-5 px-8 flex items-center justify-between"><a aria-current="page" href=""
+                  class="router-link-active router-link-exact-active"><img src="logo.png" alt=""
+                    style="max-width: 200px;"></a><button><svg class="h-6 w-6 text-secondary-light"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12">
+                    </path>
+                  </svg></button></div>
+              <div class="flex flex-col gap-3 border-t p-5 border-white">
+                <div><a aria-current="page" href=""
+                    class="router-link-active router-link-exact-active text-base text-lp-green-2">Home</a></div>
+                <div><a aria-current="page" href="#info"
+                    class="router-link-active router-link-exact-active text-base text-secondary-light">Flywheel</a>
+                </div>
+                <div><a aria-current="page" href="#launch-section"
+                    class="router-link-active router-link-exact-active text-base text-secondary-light">Earn Yield</a>
+                </div>
+                <div><a aria-current="page" href="#guide"
+                    class="router-link-active router-link-exact-active text-base text-secondary-light">Platform
+                    Features</a></div>
+              </div>
+              <div class="flex flex-col items-start gap-5 px-5"><!----><!----><!----><a
+                  href="https://docs.peapods.finance/" target="_blank" rel="noopener noreferrer" class="w-full"><button
+                    type="button"
+                    class="text-center rounded flex items-center justify-center gap-2 font-manrope px-3 py-2 text-xs px-5 py-2.5 text-sm rounded rounded-full bg-lp-green-2 btn-primary text-black-2 rounded-full w-full"><span>Documentation</span><!----></button></a><a
+                  href="https://peapods.finance/app" class="w-full"><button type="button"
+                    class="text-center rounded flex items-center justify-center gap-2 font-manrope px-3 py-2 text-xs px-5 py-2.5 text-sm rounded rounded-full bg-lp-green-2 btn-primary text-black-2 rounded-full w-full"><span>Platform</span><svg
+                      width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5 text-black-2">
+                      <g id="fluent:arrow-right-20-filled">
+                        <path id="Vector"
+                          d="M11.265 3.20501C11.1196 3.0733 10.9284 3.00381 10.7324 3.01143C10.5363 3.01905 10.3511 3.10317 10.2164 3.24575C10.0816 3.38834 10.0081 3.57804 10.0116 3.77418C10.0151 3.97032 10.0953 4.15729 10.235 4.29501L15.474 9.25001H2.75C2.55109 9.25001 2.36032 9.32902 2.21967 9.46968C2.07902 9.61033 2 9.80109 2 10C2 10.1989 2.07902 10.3897 2.21967 10.5303C2.36032 10.671 2.55109 10.75 2.75 10.75H15.476L10.235 15.707C10.161 15.774 10.1012 15.8551 10.0589 15.9456C10.0167 16.036 9.99295 16.134 9.98907 16.2337C9.9852 16.3335 10.0013 16.433 10.0364 16.5265C10.0714 16.6199 10.1248 16.7054 10.1934 16.778C10.2619 16.8505 10.3443 16.9087 10.4356 16.949C10.5269 16.9893 10.6254 17.011 10.7252 17.0127C10.825 17.0145 10.9242 16.9963 11.0168 16.9593C11.1095 16.9223 11.1939 16.8671 11.265 16.797L17.683 10.727C17.8427 10.5766 17.9481 10.3776 17.983 10.161C18.0066 10.0525 18.0059 9.94018 17.981 9.83201C17.9448 9.6189 17.8402 9.42337 17.683 9.275L11.265 3.20501Z"
+                          fill="currentColor"></path>
+                      </g>
+                    </svg></button></a></div>
+            </div>
+          </div>
+        </nav><!---->
+        <div
+          class="flex flex-col relative w-full overflow-hidden px-7 py-10 lg:py-20 bg-lp-blue-8 relative bg-pattern bg-fixed bg-contain">
+          <div class="w-full mx-auto max-w-8xl lg:max-w-7xl md:max-w-4xl my-auto">
+            <div class="relative z-2 flex flex-col gap-5 items-start justify-center items-center"><!----><!---->
+              <p class="w-full max-w-prose text-base font-medium text-white text-center"></p>
+            </div><img src="effect-7.svg" alt="effect-7" class="absolute right-0 top-0">
+            <div class="flex md:flex-row flex-col items-center justify-between w-full sm:py-52 py-24 gap-10">
+              <div class="flex flex-col items-start gap-5 sm:max-w-2xl max-w-none font-manrope z-4 relative">
+                <h1 class="text-lp-secondary text-5xl"> The first fully decentralized on-chain yield-bearing index
+                  funds, or "pods" </h1>
+                <p class="text-base text-white/75"> Get broad crypto exposure from blue chips to microcaps and earn real
+                  yield powered by market volatility and arbitrage. Simply wrap or buy into a pod, provide liquidity,
+                  sit back, relax, and earn PEAS forever. </p>
+                <div class="flex sm:flex-row flex-col sm:items-center items-start gap-5 mt-5"><a class="sm:w-max w-full"
+                    target="_blank" rel="noopener noreferrer" id="connect_button"><button type="button"
+                      class="text-center rounded flex items-center justify-center gap-2 font-manrope px-5 py-2.5 text-sm rounded rounded-full bg-lp-green-2 btn-primary text-black-2 rounded-full w-full"><span>Stake
+                        PEAS</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black-2">
+                        <g id="fluent:arrow-right-20-filled">
+                          <path id="Vector"
+                            d="M11.265 3.20501C11.1196 3.0733 10.9284 3.00381 10.7324 3.01143C10.5363 3.01905 10.3511 3.10317 10.2164 3.24575C10.0816 3.38834 10.0081 3.57804 10.0116 3.77418C10.0151 3.97032 10.0953 4.15729 10.235 4.29501L15.474 9.25001H2.75C2.55109 9.25001 2.36032 9.32902 2.21967 9.46968C2.07902 9.61033 2 9.80109 2 10C2 10.1989 2.07902 10.3897 2.21967 10.5303C2.36032 10.671 2.55109 10.75 2.75 10.75H15.476L10.235 15.707C10.161 15.774 10.1012 15.8551 10.0589 15.9456C10.0167 16.036 9.99295 16.134 9.98907 16.2337C9.9852 16.3335 10.0013 16.433 10.0364 16.5265C10.0714 16.6199 10.1248 16.7054 10.1934 16.778C10.2619 16.8505 10.3443 16.9087 10.4356 16.949C10.5269 16.9893 10.6254 17.011 10.7252 17.0127C10.825 17.0145 10.9242 16.9963 11.0168 16.9593C11.1095 16.9223 11.1939 16.8671 11.265 16.797L17.683 10.727C17.8427 10.5766 17.9481 10.3776 17.983 10.161C18.0066 10.0525 18.0059 9.94018 17.981 9.83201C17.9448 9.6189 17.8402 9.42337 17.683 9.275L11.265 3.20501Z"
+                            fill="currentColor"></path>
+                        </g>
+                      </svg></button></a><a class="sm:w-max w-full" id="connect_button"><button type="button"
+                      class="text-center rounded flex items-center justify-center gap-2 font-manrope px-5 py-2.5 text-sm rounded rounded-full bg-lp-green-2 btn-primary text-black-2 rounded-full w-full"><span>Farm
+                        PEAS</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-black-2">
+                        <g id="fluent:arrow-right-20-filled">
+                          <path id="Vector"
+                            d="M11.265 3.20501C11.1196 3.0733 10.9284 3.00381 10.7324 3.01143C10.5363 3.01905 10.3511 3.10317 10.2164 3.24575C10.0816 3.38834 10.0081 3.57804 10.0116 3.77418C10.0151 3.97032 10.0953 4.15729 10.235 4.29501L15.474 9.25001H2.75C2.55109 9.25001 2.36032 9.32902 2.21967 9.46968C2.07902 9.61033 2 9.80109 2 10C2 10.1989 2.07902 10.3897 2.21967 10.5303C2.36032 10.671 2.55109 10.75 2.75 10.75H15.476L10.235 15.707C10.161 15.774 10.1012 15.8551 10.0589 15.9456C10.0167 16.036 9.99295 16.134 9.98907 16.2337C9.9852 16.3335 10.0013 16.433 10.0364 16.5265C10.0714 16.6199 10.1248 16.7054 10.1934 16.778C10.2619 16.8505 10.3443 16.9087 10.4356 16.949C10.5269 16.9893 10.6254 17.011 10.7252 17.0127C10.825 17.0145 10.9242 16.9963 11.0168 16.9593C11.1095 16.9223 11.1939 16.8671 11.265 16.797L17.683 10.727C17.8427 10.5766 17.9481 10.3776 17.983 10.161C18.0066 10.0525 18.0059 9.94018 17.981 9.83201C17.9448 9.6189 17.8402 9.42337 17.683 9.275L11.265 3.20501Z"
+                            fill="currentColor"></path>
+                        </g>
+                      </svg></button></a></div>
+              </div><img src="peapods.webp" alt="peapods" class="sm:w-1/2 w-full z-4">
+            </div>
+          </div>
+        </div>
+        <div id="info"
+          class="flex flex-col relative w-full overflow-hidden px-7 py-10 lg:py-20 bg-lp-blue-1 border-t border-secondary-light/25">
+          <div class="w-full mx-auto max-w-8xl lg:max-w-7xl md:max-w-4xl my-auto">
+            <div class="relative z-2 flex flex-col gap-5 items-start justify-center items-center"><!----><!---->
+              <p class="w-full max-w-prose text-base font-medium text-white text-center"></p>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-3 relative">
+              <div
+                class="py-1 px-3 rounded-full flex items-center justify-center bg-gradient-6 text-base text-secondary-light font-manrope">
+                The Flywheel</div>
+              <h1 class="text-lp-secondary text-2xl font-manrope sm:text-left text-center"> Democratizing Volatility
+                &amp; Arbitrage </h1>
+            </div>
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 mt-10">
+              <div class="flex flex-col items-start gap-2 p-5 rounded-3xl shadow-detail border border-secondary-light">
+                <div class="flex items-center gap-2"><img src="bonding.svg" alt="peapods">
+                  <h1 class="text-secondary-light font-semibold text-xl font-manrope">Acquire</h1>
+                </div>
+                <p class="text-base text-secondary-light/75">Users get direct exposure to a pod and the underlying
+                  assets by wrapping or buying into the pod through an AMM where it's listed.</p>
+              </div>
+              <div class="flex flex-col items-start gap-2 p-5 rounded-3xl shadow-detail border border-secondary-light">
+                <div class="flex items-center gap-2"><img src="debonding.svg" alt="peapods">
+                  <h1 class="text-secondary-light font-semibold text-xl font-manrope">LP</h1>
+                </div>
+                <p class="text-base text-secondary-light/75">By providing LP for a pod users are contributing to the
+                  stability of the fund, powering the ecosystem, and turning on the ability to earn yield.</p>
+              </div>
+              <div class="flex flex-col items-start gap-2 p-5 rounded-3xl shadow-detail border border-secondary-light">
+                <div class="flex items-center gap-2"><img src="full-collaterized.svg" alt="peapods">
+                  <h1 class="text-secondary-light font-semibold text-xl font-manrope">Earn Forever</h1>
+                </div>
+                <p class="text-base text-secondary-light/75">As users add LP into a pod they stabilize the fund and
+                  further support arbitrage through volatility while earning deflationary, real yield.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="launch-section"
+          class="flex flex-col relative w-full overflow-hidden px-7 py-10 lg:py-20 bg-launch bg-lp-blue-1 bg-cover bg-left-top bg-fixed">
+          <div class="w-full mx-auto max-w-8xl lg:max-w-7xl md:max-w-4xl my-auto">
+            <div class="relative z-2 flex flex-col gap-5 items-start justify-center items-center"><!----><!---->
+              <p class="w-full max-w-prose text-base font-medium text-white text-center"></p>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-5 font-manrope">
+              <h1 class="text-2xl text-lp-secondary font-bold">PEAS: Deflationary, Volatility-Powered, Real Yield </h1>
+              <h2 class="text-base text-secondary-light"> The protocol rewards token, PEAS, completes the flywheel and
+                is powered by volatility &amp; arbitrage perpetually market buying, burning, and paying PEAS to staked
+                LPs. The more pods in the ecosystem, the more TVL on the protocol, the more volatility, the more
+                arbitrage, the more PEAS that is bought, burned, and floor lifted. </h2>
+              <div class="bg-black/25 rounded-full flex sm:flex-row flex-col items-center gap-5 py-5 px-10">
+                <h1 class="text-white/75 font-manrope font-medium text-base shrink-0">PEAS Contract: </h1>
+                <div class="flex items-center gap-2 w-full sm:max-w-none max-w-[200px]">
+                  <p class="text-white font-manrope text-base overflow-x-auto break-normal"><a
+                      href="https://etherscan.io/token/0x02f92800F57BCD74066F5709F1Daa1A4302Df875" target="_blank"
+                      rel="noopener noreferrer">0x02f92800F57BCD74066F5709F1Daa1A4302Df875</a></p><button><svg
+                      xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none"
+                      class="h-5 w-5">
+                      <path opacity="0.2" d="M24.4688 4.53125V19.0312H19.0312V9.96875H9.96875V4.53125H24.4688Z"
+                        fill="#12FF9B"></path>
+                      <path
+                        d="M24.4688 3.625H9.96875C9.7284 3.625 9.49789 3.72048 9.32793 3.89043C9.15798 4.06039 9.0625 4.2909 9.0625 4.53125V9.0625H4.53125C4.2909 9.0625 4.06039 9.15798 3.89043 9.32793C3.72048 9.49789 3.625 9.7284 3.625 9.96875V24.4688C3.625 24.7091 3.72048 24.9396 3.89043 25.1096C4.06039 25.2795 4.2909 25.375 4.53125 25.375H19.0312C19.2716 25.375 19.5021 25.2795 19.6721 25.1096C19.842 24.9396 19.9375 24.7091 19.9375 24.4688V19.9375H24.4688C24.7091 19.9375 24.9396 19.842 25.1096 19.6721C25.2795 19.5021 25.375 19.2716 25.375 19.0312V4.53125C25.375 4.2909 25.2795 4.06039 25.1096 3.89043C24.9396 3.72048 24.7091 3.625 24.4688 3.625ZM18.125 23.5625H5.4375V10.875H18.125V23.5625ZM23.5625 18.125H19.9375V9.96875C19.9375 9.7284 19.842 9.49789 19.6721 9.32793C19.5021 9.15798 19.2716 9.0625 19.0312 9.0625H10.875V5.4375H23.5625V18.125Z"
+                        fill="#12FF9B"></path>
+                    </svg></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="guide" class="flex flex-col relative w-full overflow-hidden px-7 py-10 lg:py-20 bg-lp-blue-1">
+          <div class="w-full mx-auto max-w-8xl lg:max-w-7xl md:max-w-4xl">
+            <div class="relative z-2 flex flex-col gap-5 items-start justify-center"><!----><!---->
+              <p class="w-full max-w-prose text-base font-medium text-white text-center"></p>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-3 relative">
+              <div
+                class="py-1 px-3 rounded-full flex items-center justify-center bg-gradient-6 text-base text-secondary-light font-manrope">
+                Platform</div>
+              <h1 class="text-lp-secondary text-2xl font-manrope sm:text-left text-center"> What can you do with
+                Peapods? </h1>
+              <p class="text-base text-white/75 sm:text-left text-center"> The entire ecosystem is liquid providing
+                powerful interwoven mechanics that keep the flywheel turning. </p>
+            </div>
+            <div class="flex lg:flex-row flex-col items-stretch justify-center gap-5 mt-10 w-full">
+              <div
+                class="p-5 bg-black/25 rounded-3xl flex flex-col lg:items-start items-center gap-5 w-full lg:max-w-xs max-w-none">
+                <div class="flex lg:flex-row flex-col items-center gap-3 lg:text-left text-center"><img src="how.svg"
+                    alt="how">
+                  <h1 class="text-lp-secondary">Platform Features</h1>
+                </div>
+                <div class="flex flex-col items-start w-full gap-3"><button
+                    class="font-bold text-base text-lp-green-2">Wrap</button><button
+                    class="font-bold text-base text-secondary-light">Unwrap</button><button
+                    class="font-bold text-base text-secondary-light">LP, Stake, &amp; Earn</button><button
+                    class="font-bold text-base text-secondary-light">Creating Pods</button></div>
+              </div>
+              <div class="p-5 bg-black/[0.15] rounded-3xl w-full">
+                <div class="flex flex-col items-start gap-5 font-manrope">
+                  <h1 class="text-lg font-medium text-secondary-light"> Users get exposure to a pod one of two ways:
+                    buying the pod on the open market (like Uniswap or another AMM) or through wrapping. By wrapping,
+                    users put up their collateral in exchange for pod tokens in a slippage free manner. </h1>
+                  <ul class="flex flex-col items-start gap-3 text-secondary-light/75 text-base list-disc px-5">
+                    <li>Buy pod tokens directly on the open market (i.e. Uniswap)</li>
+                    <li> Wrap pod tokens without slippage for a small fee, useful for arbitraging and opening a position
+                      with larger size </li>
+                    <li> After acquiring pod tokens, sleep well with your desired exposure, or provide LP to start
+                      earning yield </li>
+                  </ul>
+                </div>
+              </div><img src="dapp.webp" alt="" class="sm:h-[500px] h-full w-full">
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col relative w-full overflow-hidden px-7 py-10 lg:py-20 sm:mt-auto bg-lp-blue-7">
+          <div class="w-full mx-auto max-w-8xl lg:max-w-7xl md:max-w-4xl">
+            <div class="relative z-2 flex flex-col gap-5 items-start justify-center"><!----><!---->
+              <p class="w-full max-w-prose text-base font-medium text-white text-center"></p>
+            </div>
+            <div class="flex items-center justify-between w-full">
+              <div class="flex flex-col items-start gap-2"><a aria-current="page" href=""
+                  class="router-link-active router-link-exact-active"><img src="logo.png" alt=""
+                    style="max-width: 200px;"></a>
+                <h1 class="text-gradient text-base font-medium"> Fully decentralized on-chain yield-bearing index funds
+                </h1>
+                <div class="flex items-center gap-1"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                    viewBox="0 0 18 18" fill="none">
+                    <g clip-path="url(#clip0_27_3061)">
+                      <path
+                        d="M9 0.28125C4.18475 0.28125 0.28125 4.18475 0.28125 9C0.28125 13.8152 4.18475 17.7188 9 17.7188C13.8152 17.7188 17.7188 13.8152 17.7188 9C17.7188 4.18475 13.8152 0.28125 9 0.28125ZM13.118 12.4718C13.062 12.5374 11.7196 14.0795 9.25604 14.0795C6.27859 14.0795 4.17653 11.8555 4.17653 8.96193C4.17653 6.10362 6.35636 3.92048 9.23066 3.92048C11.5846 3.92048 12.8154 5.23234 12.8666 5.2882C12.9297 5.357 12.9682 5.44479 12.9761 5.53782C12.984 5.63085 12.9608 5.72387 12.9101 5.80229L12.1233 7.02063C11.981 7.24096 11.6742 7.27907 11.4823 7.10132C11.4741 7.09379 10.5496 6.26179 9.30681 6.26179C7.68554 6.26179 6.7082 7.44216 6.7082 8.93654C6.7082 10.3288 7.60518 11.7382 9.3195 11.7382C10.6799 11.7382 11.6145 10.742 11.6238 10.7319C11.8042 10.5362 12.118 10.5549 12.2745 10.7689L13.1374 11.9492C13.1934 12.0258 13.222 12.119 13.2185 12.2138C13.2149 12.3087 13.1795 12.3996 13.118 12.4718Z"
+                        fill="white" fill-opacity="0.75"></path>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_27_3061">
+                        <rect width="18" height="18" fill="white"></rect>
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <h1 class="text-base text-white/75">2023 Peapods Finance</h1>
+                </div>
+              </div>
+              <div class="flex items-center gap-5"><a href="https://t.me/PeapodsFinance" target="_blank"
+                  rel="noopener noreferrer"><svg width="18" height="17" viewBox="0 0 18 17" fill="none"
+                    xmlns="http://www.w3.org/2000/svg" class="">
+                    <path id="telegram"
+                      d="M7.05161 10.9901L13.7223 16.0725C14.4836 16.5056 15.0329 16.2813 15.2226 15.3438L17.9379 2.14827C18.2158 0.998899 17.513 0.477413 16.7847 0.818384L0.840369 7.15858C-0.247967 7.6088 -0.241484 8.23498 0.642013 8.51393L4.73369 9.83102L14.2064 3.66807C14.6536 3.3884 15.0641 3.53862 14.7272 3.84702"
+                      fill="white"></path>
+                  </svg></a><a href="" target="_blank" rel="noopener noreferrer"><svg width="18" height="21"
+                    viewBox="0 0 18 21" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+                    <path id="dex" fill-rule="evenodd" clip-rule="evenodd"
+                      d="M6.69378 1.71957C5.46078 2.33401 4.45202 2.85395 4.45223 2.8751C4.45278 2.92968 7.41147 4.36309 7.51648 4.3596C7.56425 4.35807 7.91079 4.20547 8.28652 4.02053L8.96978 3.68434L9.71599 4.05127L10.4622 4.41827L11.6842 3.89298C13.5255 3.10146 13.7167 3.01473 13.6867 2.98559C13.6469 2.94692 12.9865 2.60751 11.1947 1.7051C10.3287 1.26895 9.48825 0.841317 9.32689 0.754787C9.16556 0.668256 9.01153 0.598647 8.98463 0.599995C8.95772 0.601342 7.92681 1.10516 6.69378 1.71957ZM1.28585 4.39854L0.00231565 5.03277V7.81633C0.00231565 9.3473 0.0191698 10.5999 0.0398435 10.5999C0.0604456 10.5999 0.69195 10.338 1.44315 10.0179L2.80898 9.43598V6.50193L3.47641 6.84978C3.99073 7.1176 4.50535 7.38486 5.02028 7.65158L5.8967 8.10552L6.28668 7.93682C6.53126 7.83085 6.77536 7.72385 7.01895 7.61582C7.20719 7.53196 7.66927 7.33286 8.04576 7.1733C8.42226 7.01367 8.77078 6.85314 8.82019 6.81656C8.88584 6.76796 8.08534 6.34478 5.85938 5.25128C4.18149 4.42701 2.75484 3.75523 2.68904 3.75845C2.62325 3.76167 1.99182 4.04967 1.28585 4.39854ZM13.918 4.57664C13.0439 4.95417 12.328 5.27814 12.3272 5.29662C12.3264 5.31507 12.8029 5.58608 13.3861 5.89877C13.9692 6.21153 14.4463 6.48414 14.4463 6.50467C14.4463 6.52515 13.9303 6.76433 13.2997 7.03627C12.669 7.30815 11.0749 7.99684 9.75715 8.5667L5.3418 10.4759C4.23112 10.9563 3.22997 11.3892 3.11703 11.4381C0.848411 12.4206 0.224857 12.6932 0.139225 12.74C0.0531167 12.7871 0.0336127 13.0608 0.0182865 14.4345L0 16.073L1.1478 16.6324L2.29557 17.1919L3.88714 16.5048C4.76253 16.1269 5.47871 15.7979 5.47871 15.7736C5.47871 15.7495 5.31695 15.6487 5.11933 15.5495C4.92162 15.4503 4.51349 15.2308 4.21229 15.0616C3.91111 14.8924 3.61079 14.7371 3.54486 14.7165C3.47894 14.696 3.42597 14.66 3.42704 14.6366C3.42814 14.6132 4.129 14.2948 4.9844 13.9288C6.64587 13.2182 7.91735 12.6705 10.6471 11.4896C11.8677 10.9617 13.0885 10.434 14.3094 9.90675C15.3824 9.44343 16.63 8.90229 17.0818 8.70425L17.9033 8.34417L17.9215 6.68707L17.9399 5.03003L16.7757 4.45842C16.1354 4.14406 15.5881 3.88762 15.5594 3.88855C15.5308 3.88942 14.7921 4.19903 13.918 4.57664ZM17.5914 10.5548C17.4198 10.635 17.081 10.7851 16.8384 10.8883C16.5958 10.9916 16.1354 11.1903 15.8154 11.33L15.2335 11.5839L15.2202 13.0386C15.2129 13.8388 15.1821 14.4898 15.1518 14.4856C15.0829 14.4758 13.9924 13.9408 12.8961 13.3789C12.1049 12.9733 12.0552 12.9572 11.8693 13.0453C11.7618 13.0962 11.1194 13.3719 10.4417 13.6579C9.76398 13.9439 9.1874 14.1966 9.16028 14.2194C9.13323 14.2423 10.4972 14.9495 12.1914 15.7911L15.2717 17.3213L16.5875 16.6701C17.3111 16.312 17.9265 15.9854 17.9548 15.9443C18.0186 15.8519 18.0131 10.3964 17.9493 10.4038C17.924 10.4067 17.7629 10.4747 17.5914 10.5548ZM10.3048 16.9582C10.0765 17.0521 9.84836 17.1461 9.62024 17.2402C8.93137 17.5253 9.06637 17.5348 8.24682 17.1445C7.70097 16.8846 7.46568 16.8044 7.36355 16.8433C7.28695 16.8725 6.62765 17.1562 5.89834 17.4738C5.16908 17.7914 4.5471 18.0513 4.51616 18.0513C4.21019 18.0513 4.71887 18.342 6.68175 19.2892L8.98374 20.4L9.95231 19.9425C10.485 19.6909 11.5595 19.1871 12.3401 18.823C13.1206 18.4587 13.7496 18.1512 13.7378 18.1396C13.7259 18.1281 13.0719 17.8068 12.2844 17.4257L10.8524 16.7329L10.3048 16.9582Z"
+                      fill="white"></path>
+                  </svg></a><a href="https://x.com/PeapodsFinance" target="_blank" rel="noopener noreferrer"><svg
+                    width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
+                    <path id="x"
+                      d="M0.0437997 0.0764771L6.99339 9.36857L0 16.9235H1.57406L7.6969 10.3089L12.6438 16.9235H18L10.6592 7.10883L17.1687 0.0764771H15.5947L9.95603 6.1682L5.4 0.0764771H0.0437997ZM2.35852 1.2358H4.81913L15.685 15.7642H13.2244L2.35852 1.2358Z"
+                      fill="white"></path>
+                  </svg></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="vue-notification-group" style="width: 300px; top: 0px; right: 0px;"><span></span></div>
+    </div>
+  </div>
+
+
+
+
+  <onboard-v2 style="all: initial;"
+    data-scrapbook-shadowdom="
+
+  <style>
+    :host {
+          /* COLORS */
+          --white: white;
+          --black: black;
+          --primary-1: #2F80ED;
+          --primary-100: #eff1fc;
+          --primary-200: #d0d4f7;
+          --primary-300: #b1b8f2;
+          --primary-400: #929bed;
+          --primary-500: #6370e5;
+          --primary-600: #454ea0;
+          --primary-700: #323873;
+          --gray-100: #ebebed;
+          --gray-200: #c2c4c9;
+          --gray-300: #999ca5;
+          --gray-400: #707481;
+          --gray-500: #33394b;
+          --gray-600: #242835;
+          --gray-700: #1a1d26;
+          --success-100: #d1fae3;
+          --success-200: #baf7d5;
+          --success-300: #a4f4c6;
+          --success-400: #8df2b8;
+          --success-500: #5aec99;
+          --success-600: #18ce66;
+          --success-700: #129b4d;
+          --danger-100: #ffe5e6;
+          --danger-200: #ffcccc;
+          --danger-300: #ffb3b3;
+          --danger-400: #ff8080;
+          --danger-500: #ff4f4f;
+          --danger-600: #cc0000;
+          --danger-700: #660000;
+          --warning-100: #ffefcc;
+          --warning-200: #ffe7b3;
+          --warning-300: #ffd780;
+          --warning-400: #ffc74c;
+          --warning-500: #ffaf00;
+          --warning-600: #cc8c00;
+          --warning-700: #664600;
+
+          /* FONTS */
+          --font-family-normal: var(--w3o-font-family, Inter, sans-serif);
+
+          --font-size-1: 3rem;
+          --font-size-2: 2.25rem;
+          --font-size-3: 1.5rem;
+          --font-size-4: 1.25rem;
+          --font-size-5: 1rem;
+          --font-size-6: .875rem;
+          --font-size-7: .75rem;
+
+          --font-line-height-1: 24px;
+          --font-line-height-2: 20px;
+          --font-line-height-3: 16px;
+          --font-line-height-4: 12px;
+
+          /* SPACING */
+          --spacing-1: 3rem;
+          --spacing-2: 2rem;
+          --spacing-3: 1.5rem;
+          --spacing-4: 1rem;
+          --spacing-5: 0.5rem;
+          --spacing-6: 0.25rem;
+          --spacing-7: 0.125rem;
+
+          /* BORDER RADIUS */
+          --border-radius-1: 24px;
+          --border-radius-2: 20px;
+          --border-radius-3: 16px;
+          --border-radius-4: 12px;
+          --border-radius-5: 8px;
+
+          /* SHADOWS */
+          --shadow-0: none;
+          --shadow-1: 0px 4px 12px rgba(0, 0, 0, 0.1);
+          --shadow-2: inset 0px -1px 0px rgba(0, 0, 0, 0.1);
+          --shadow-3: 0px 4px 16px rgba(0, 0, 0, 0.2);
+
+          /* MODAL POSITIONING */
+          --modal-z-index: 10;
+          --modal-top: unset;
+          --modal-right: unset;
+          --modal-bottom: unset;
+          --modal-left: unset;
+
+          /* MODAL STYLES */
+          --modal-backdrop: rgba(0, 0, 0, 0.6);
+
+        }
+      </style>
+    <style id=&quot;svelte-g9s19b&quot;>.flex{display:flex}.inline-flex{display:inline-flex}.flex-column{flex-direction:column}.items-center{align-items:center}.items-end{align-items:flex-end}.items-start{align-items:flex-start}.justify-center{justify-content:center}.justify-start{justify-content:flex-start}.justify-between{justify-content:space-between}.justify-end{justify-content:flex-end}.justify-around{justify-content:space-around}.relative{position:relative}.absolute{position:absolute}.fixed{position:fixed}.pointer{cursor:pointer}.shadow-1{box-shadow:var(--onboard-shadow-1, var(--shadow-1))}.w-100{width:100%}*{box-sizing:border-box}input{background:var(--onboard-white, var(--white))}input{width:100%;padding:0.5rem 1rem;outline:2px solid var(--onboard-gray-200, var(--gray-200));border:none;border-radius:8px;font-size:1rem;line-height:1.5;color:var(--onboard-gray-600, var(--gray-600));transition:all 200ms ease-in-out}input[type='checkbox']{-webkit-appearance:none;width:auto;background:var(--onboard-white, var(--white));outline:1px solid var(--onboard-gray-300, var(--gray-300));border:none;padding:0.5em;border-radius:3px;display:flex;justify-content:center;align-items:center;position:relative;cursor:pointer}input[type='checkbox']:hover{border-color:var(
+      --onboard-checkbox-background,
+      var(--onboard-primary-500, var(--primary-500))
+    )}input[type='checkbox']:checked{background:var(
+      --onboard-checkbox-background,
+      var(--onboard-primary-500, var(--primary-500))
+    );border-color:var(
+      --onboard-checkbox-background,
+      var(--onboard-primary-500, var(--primary-500))
+    );color:var(--onboard-checkbox-color, var(--onboard-white, var(--white)))}input[type='checkbox']:checked:after{content:url(&quot;&quot;);font-size:12px;position:absolute;color:var(--onboard-checkbox-color, var(--onboard-white, var(--white)))}input:hover{border-color:var(
+      --onboard-checkbox-color,
+      var(--onboard-white, var(--white))
+    )}input:focus{border-color:var(--onboard-primary-500, var(--primary-500));box-shadow:0 0 1px 1px
+      var(
+        --onboard-checkbox-background,
+        var(--onboard-primary-500, var(--primary-500))
+      );box-shadow:0 0 0 1px -moz-mac-focusring}input:disabled, textarea:disabled, select:disabled{background:var(--gray-100)}input::-moz-focus-inner{outline:0;padding:0;margin-top:-2px;margin-bottom:-2px}a{color:var(
+      --onboard-link-color,
+      var(--onboard-primary-500, var(--primary-500))
+    );text-decoration:none}a:hover{text-decoration:underline}button{display:flex;align-items:center;justify-content:center;padding:calc(var(--onboard-spacing-4, var(--spacing-4)) - 1px);border-radius:24px;cursor:pointer;font:inherit;border:none;transition:background-color 150ms ease-in-out, color 150ms ease-in-out}.onboard-button-primary{background:var(--onboard-white, var(--white));padding:calc(var(--onboard-spacing-5, var(--spacing-5)) - 1px)
+      calc(var(--onboard-spacing-4, var(--spacing-4)) - 1px);color:var(--onboard-gray-500, var(--gray-500));font-size:var(--onboard-font-size-6, var(--font-size-6));line-height:var(--onboard-font-line-height-3, var(--font-line-height-3));border:1px solid var(--onboard-gray-500, var(--gray-500));font-weight:600}.button-neutral-solid{width:100%;border-radius:8px;background:var(--onboard-gray-500, var(--gray-500));color:var(--onboard-white, var(--white));line-height:var(--onboard-font-line-height-3, var(--font-line-height-3))}.button-neutral-solid-b{width:100%;background:var(--onboard-gray-100, var(--gray-100));color:var(--onboard-gray-500, var(--gray-500));line-height:var(--onboard-font-line-height-3, var(--font-line-height-3))}button.rounded{border-radius:24px}.button-neutral-solid:hover{background:var(--onboard-gray-700, var(--gray-700))}.button-neutral-solid-b:hover{background:var(--onboard-gray-200, var(--gray-200))}.button-neutral-solid:active{color:var(--onboard-gray-300, var(--gray-300))}.button-neutral-solid-b:active{color:var(--onboard-gray-600, var(--gray-600));background:var(--onboard-gray-300, var(--gray-300))}.container.svelte-g9s19b{padding:16px;font-family:var(--onboard-font-family-normal, var(--font-family-normal));pointer-events:none;touch-action:none;width:100%}.z-indexed.svelte-g9s19b{z-index:var(--account-center-z-index)}@media all and (min-width: 428px){.container.svelte-g9s19b{max-width:348px}}</style>      <div class=&quot;container flex flex-column fixed z-indexed svelte-g9s19b&quot; style=&quot;
+        top: var(--notify-onboard-container-position-top, 0); 
+        right: var(--notify-onboard-container-position-right, 0);; &quot;><div id=&quot;w3o-transaction-preview-container&quot;></div>  </div><style id=&quot;svelte-1h8mmo3&quot;>ul.svelte-1h8mmo3{padding-left:0;display:flex;flex-flow:column nowrap;font-size:var(
+      --notify-onboard-font-size,
+      var(--onboard-font-size-5, var(--font-size-5))
+    );list-style-type:none;overflow:visible;scrollbar-width:none;box-sizing:border-box;z-index:var(--notify-onboard-z-index, 300);font-family:var(
+      --notify-onboard-font-family,
+      var(--onboard-font-family-normal, inherit)
+    );margin:8px 0;pointer-events:all}.y-scroll.svelte-1h8mmo3{overflow-y:scroll}.y-visible.svelte-1h8mmo3{overflow-y:visible}li.notification-list-top.svelte-1h8mmo3:not(:first-child){margin-top:8px}li.notification-list-bottom.svelte-1h8mmo3:not(:first-child){margin-bottom:8px}ul.bn-notify-bottomLeft.svelte-1h8mmo3,ul.bn-notify-bottomRight.svelte-1h8mmo3{flex-direction:column-reverse}@media only screen and (max-width: 450px){ul.svelte-1h8mmo3{width:100%}}.bn-notify-clickable:hover{cursor:pointer}.svelte-1h8mmo3::-webkit-scrollbar{display:none}</style>"></onboard-v2>
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300 600;
+      font-display: swap;
+      src: url("") format("woff2");
+    }
+  </style>
+  <script
+    data-scrapbook-elem="basic-loader">(function () { var k1 = "data-scrapbook-shadowdom", k2 = "data-scrapbook-canvas", k3 = "data-scrapbook-input-indeterminate", k4 = "data-scrapbook-input-checked", k5 = "data-scrapbook-option-selected", k6 = "data-scrapbook-input-value", k7 = "data-scrapbook-textarea-value", fn = function (r) { var E = r.querySelectorAll ? r.querySelectorAll("*") : r.getElementsByTagName("*"), i = E.length, e, d, s; while (i--) { e = E[i]; if ((d = e.getAttribute(k1)) !== null && !e.shadowRoot && e.attachShadow) { s = e.attachShadow({ mode: 'open' }); s.innerHTML = d; e.removeAttribute(k1); } if ((d = e.getAttribute(k2)) !== null) { (function () { var c = e, g = new Image(); g.onload = function () { c.getContext('2d').drawImage(g, 0, 0); }; g.src = d; })(); e.removeAttribute(k2); } if ((d = e.getAttribute(k3)) !== null) { e.indeterminate = true; e.removeAttribute(k3); } if ((d = e.getAttribute(k4)) !== null) { e.checked = d === 'true'; e.removeAttribute(k4); } if ((d = e.getAttribute(k5)) !== null) { e.selected = d === 'true'; e.removeAttribute(k5); } if ((d = e.getAttribute(k6)) !== null) { e.value = d; e.removeAttribute(k6); } if ((d = e.getAttribute(k7)) !== null) { e.value = d; e.removeAttribute(k7); } if (e.shadowRoot) { fn(e.shadowRoot); } } }; fn(document); })()</script>
+</body>
+
+</html>
